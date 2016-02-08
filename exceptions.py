@@ -1,6 +1,8 @@
-my_list = [1,2,3,5]
-
-#try:
-x = my_list[5]
-#except IndexError:
-#    print("Out of Range")
+notNum = True
+while notNum:
+    try:
+        x = int(input("Enter a Number "))
+        notNum = False
+    except ValueError:
+        print("Mate, gimme a number")
+print ("Your number is",x)
